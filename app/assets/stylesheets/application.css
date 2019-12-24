@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+div{
+
+    color: black;
+}
+
+
+ h4{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+
+

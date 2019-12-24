@@ -1,0 +1,25 @@
+<%= form_for @adv , url:{action: "create"} do |f| %>
+
+
+    <%= f.label :numbersofrooms, 'Numbers of Rooms : ' %><br>
+    <%= f.text_field :numberofbath %><br><br>
+
+    <%= f.label :img, 'Image : ' %><br>
+    <%= f.text_field :img %><br><br>
+
+    <%= f.label :numberofbath, 'Number of Bath : ' %><br>
+    <%= f.text_field :numberofbath %><br><br>
+
+    <%= f.label :area, 'Area : ' %><br>
+    <%= f.text_field :area %><br><br>
+
+    <%= f.label :space, 'Space :' %><br>
+    <%= f.text_field :space  %><br><br>
+
+    <%= f.label :price, 'Price :' %><br>
+    <%= f.text_field :price  %><br><br>
+
+    <%= f.submit " Save " %>
+
+    <%end%>
+

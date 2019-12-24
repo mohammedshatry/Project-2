@@ -1,0 +1,21 @@
+
+    <h4> Numbers of rooms: </h4>
+     <%= @adv.numbersofrooms %> 
+     <br>
+     <img style="width:200px;height:200px" src="<%= @adv.img %>">
+     <br>
+     <h4>number of bath: </h4>
+    <%= @adv.numberofbath %>
+    <h4> Area: </h4>
+     <%= @adv.area %> 
+     <br>
+     <h4> Space: </h4>
+     <%= @adv.space %> 
+     <br>
+     <h4>Price: </h4>
+     <%= @adv.price %>
+    <br>
+
+<button><%= link_to 'Edit',edit_adv_path %></button>
+<button><%= link_to 'Delete',adv_path(@adv), :method => 'delete' %></button>
+  
