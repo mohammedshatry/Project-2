@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
-  def index
-    @advs = Adv.all
 
+  before_action :authenticate_user!
+  def index
+    @advs = current_user.advs
   end
 end

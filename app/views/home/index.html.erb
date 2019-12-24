@@ -1,1 +1,18 @@
+<div class="super-container">
+    <div class="row text-center">  
+<% @advs.each do |adv|%>
 
+    <div class="col-sm-12 col-lg-4 mb-4">
+        <div class="card">
+            <p> Numbers of rooms:<%= adv.numbersofrooms %> Number of bath : <%= adv.numberofbath %><br> Space :<%= adv.space %> 
+            Area : <%= adv.area %> Price :<%= adv.price %> </p>
+            <img src="<%= adv.img %>"  class="img-responsive margin my-img" style="width:100%" alt="Image">
+        </div>
+    </div>
+
+
+
+    <% end %>
+
+    </div>
+    </div>

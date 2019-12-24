@@ -1,24 +1,39 @@
 
-<% @advs.each do |adv| %>
-    <p>
-    <h4> Number of Rooms </h4>
-     <%= adv.numbersofrooms  %> 
-     <br>
-     <img style="width:200px;height:200px"src="<%= adv.img %>">
-     <br>
-     <h4> Number of Bath: </h4>
-    <%= adv.numberofbath %>
-    <h4> Area  </h4>
-     <%= adv.area %> 
-     <br>
-     <h4> Space  </h4>
-     <%= adv.space %> 
-     <br>
-     <h4> Price  </h4>
-     <%= adv.price %>
-    <br>
-    <br>
-    </p>
-    <button> <%=link_to 'New Apprtment',new_adv_path%></button>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+    </head>
+    <body>
+    
+  
+    <div class="super-container">
+    <div class="row text-center">  
+            <% @advs.each do |adv| %>
 
-    <% end %>
+                    <div class="col-sm-12 col-lg-4 mb-4">
+                    <div class="card">
+                    <p> Numbers of rooms:<%= adv.numbersofrooms %> Number of bath : <%= adv.numberofbath %><br> Space :<%= adv.space %> 
+                    Area : <%= adv.area %> Price :<%= adv.price %> </p>
+                    <img src="<%= adv.img %>"  class="img-responsive margin my-img" style="width:100%" >
+                    
+                    </div>
+                    </div>
+        <% end%>
+  </div>
+     
+    </div>
+
+    <footer class="container-fluid bg-4 text-center">
+      <p> Shatry <a href="https://www.shatry.com">www.shatry.com</a></p> 
+    </footer>
+    
+    </body>
+    </html>
+    

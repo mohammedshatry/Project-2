@@ -14,15 +14,65 @@
  *= require_self
  */
 
-div{
 
-    color: black;
+
+* 
+ {
+  box-sizing: border-box;
+  font-weight: normal;
 }
 
 
- h4{
-     font-family: Georgia, 'Times New Roman', Times, serif;
- }
 
 
+      body {
+        font: 20px Montserrat, sans-serif;
+        /* line-height: 1.8; */
+         color: #f5f6f7;
+        /* padding: 50px; */
+        padding: 4em;
+      }
+      p {font-size: 15px;
+      font-style: italic;}
+      .margin {margin-bottom: 45px;}
+     
+     
+      .my-bg-4 { 
+        background-color: #2f2f2f; /* Black Gray */
+        color: #fff;
+      }
+      .container-fluid {
+        padding-top: 38px;
+        padding-bottom: 38px;
+        display: flexbox;
+      }
+      .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+      }
+    
+
+
+      /* img {
+        border-radius: 4px;
+ 
+      } */
+.super-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+   
+.my-img{
+    height: 350px !important;
+}
+
+footer{
+    background-color: #2f2f2f; 
+    
+}
 
