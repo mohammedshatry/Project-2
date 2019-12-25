@@ -12,28 +12,30 @@
     </head>
     <body>
     
+
+
+
+
+
+    
   
     <div class="super-container">
     <div class="row text-center">  
-            <% @advs.each do |adv| %>
-
-                    <div class="col-sm-12 col-lg-4 mb-4">
-                    <div class="card">
-                    <p> Numbers of rooms:<%= adv.numbersofrooms %> Number of bath : <%= adv.numberofbath %><br> Space :<%= adv.space %> 
-                    Area : <%= adv.area %> Price :<%= adv.price %> </p>
-                    <img src="<%= adv.img %>"  class="img-responsive margin my-img" style="width:100%" >
-                    
-                    </div>
-                    </div>
-        <% end%>
-  </div>
-     
+     <% @advs.each do |adv| %>
+      <div class="stamp-sheet">
+      <div class="stamp" >
+      <h3 style="position: absolute;left: 10px;top:50%;color:white;border:2px solid black"><%= adv.area%></h3>
+      <a href=<%=adv_path(adv)%>>
+      <img src="<%= adv.img %>" width=600 hight =400 ></a> 
+    </div> 
+                  
     </div>
+    <% end%>
 
-    <footer class="container-fluid bg-4 text-center">
-      <p> Shatry <a href="https://www.shatry.com">www.shatry.com</a></p> 
-    </footer>
-    
-    </body>
-    </html>
+  </div> 
+
+  </div>    
+</body>
+   
+   
     
