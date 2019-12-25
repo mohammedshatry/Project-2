@@ -2,20 +2,10 @@
 
     <%= f.label :numbersofrooms, 'Numbers of Rooms : ' %><br>
     <%= f.text_field :numbersofrooms %><br><br>
-
-   
-    <div class="wrapper">
-    <div class="box">
-      <div class="js--image-preview"></div>
-      <div class="upload-options">
-        <label>
-          <input type="file" class="image-upload" accept=":img" />
-        </label>
-      </div>
-    </div>
-
+    <%= f.label :img, 'img : ' %><br>
+    <%= f.text_field :img %><br>
     <%= f.label :numberofbath, 'Number of Bath : ' %><br>
-    <%= f.text_field :numberofbath %><br><br>
+    <%= f.text_field :numberofbath %><br>
 
     <%= f.label :area, 'Area : ' %><br>
     <%= f.text_field :area %><br><br>
@@ -26,7 +16,8 @@
     <%= f.label :price, 'Price :' %><br>
     <%= f.text_field :price  %><br><br>
 
-    <%= f.submit " Save " %>
+
+    <%=link_to f.submit " Save " ,:class=> "btn btn-light%>
     
 
     <% end %>

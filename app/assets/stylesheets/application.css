@@ -276,7 +276,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', serif; font-weight: 700; col
 .navbar-header .navbar-toggle { margin-top: 12px; }
 .navbar-header .navbar-brand { letter-spacing: -0.03em; height: 60px; padding: 30px 10px 0 10px; font-size: 36px; line-height: 0px; font-weight: 700; color: #111; white-space: nowrap; }
 .navbar-default .navbar-brand:focus { color: #111; }
-.navbar-default .navbar-nav { background: #FFF; margin-top: 0; }
+.navbar-default .navbar-nav {  margin-top: 0; }
 .navbar-default .navbar-nav>li>a { color: #222; padding: 10px; border-bottom: 1px solid #DFDFDF; }
 .navbar-default .navbar-nav>li>a.selected { color: #E64B36; }
 .navbar-default a.navbar-brand:hover .navbar-default .navbar-nav>li>a:hover { background-color: #DFDFDF; }
@@ -350,4 +350,5 @@ a.linkedin-btn:after { background-color: #0077B5; }
 a.fcc-btn:after { background-color: #4B2B0D; }
 a.btn-default:hover, a.btn-default:focus { background-color: #FFFFFF; color: #FFFFFF; }
 a.btn-default:hover:after { width: 100%; }
+
 

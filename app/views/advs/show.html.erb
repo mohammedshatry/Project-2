@@ -1,6 +1,4 @@
 
-    
-    
      <img style="width:400px;height:400px" src="<%= @adv.img %>"> 
      <h4> Numbers of rooms: </h4>
      <%= @adv.numbersofrooms %> 
@@ -18,7 +16,13 @@
      <%= @adv.price %>
     <br>
 <%if current_user.id == @adv.user_id %>
-    <button><%= link_to 'Edit',edit_adv_path %></button>
-    <button><%= link_to 'Delete',adv_path(@adv), :method => 'delete' %></button>
+<br>
+
+    <%= link_to 'Edit',edit_adv_path,:class=> "btn btn-light" %> 
+    <%= link_to 'Delete',adv_path(@adv),:method => 'delete',:class=> "btn btn-light" %>
     
+
+
+
+
 <%end%>
