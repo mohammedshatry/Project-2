@@ -5,7 +5,7 @@
      <br>
      <img style="width:200px;height:200px" src="<%= @adv.img %>">
      <br>
-     <h4>number of bath: </h4>
+     <h4>Numbers of bath: </h4>
     <%= @adv.numberofbath %>
     <h4> Area: </h4>
      <%= @adv.area %> 
@@ -16,7 +16,8 @@
      <h4>Price: </h4>
      <%= @adv.price %>
     <br>
-
-<button><%= link_to 'Edit',edit_adv_path %></button>
-<button><%= link_to 'Delete',adv_path(@adv), :method => 'delete' %></button>
-  
+<%if current_user.id == @adv.user_id %>
+    <button><%= link_to 'Edit',edit_adv_path %></button>
+    <button><%= link_to 'Delete',adv_path(@adv), :method => 'delete' %></button>
+    
+<%end%>
