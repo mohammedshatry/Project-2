@@ -1,28 +1,30 @@
 
      <img style="width:400px;height:400px" src="<%= @adv.img %>"> 
-     <h4> Numbers of rooms: </h4>
+     <h4> NUMBERS OF ROOMS  </h4>
      <%= @adv.numbersofrooms %> 
    
      <br>
-     <h4>Numbers of bath: </h4>
+     <h4>NUMBERS OF BATHROOMS </h4>
     <%= @adv.numberofbath %>
-    <h4> Area: </h4>
+    <h4> AREA: </h4>
      <%= @adv.area %> 
      <br>
-     <h4> Space: </h4>
+     <h4> LAND LOT  </h4>
      <%= @adv.space %> 
      <br>
-     <h4>Price: </h4>
+     <h4>ASKING PRICE  </h4>
      <%= @adv.price %>
     <br>
+    <% if user_signed_in?%>
 <%if current_user.id == @adv.user_id %>
 <br>
 
-    <%= link_to 'Edit',edit_adv_path,:class=> "btn btn-light" %> 
-    <%= link_to 'Delete',adv_path(@adv),:method => 'delete',:class=> "btn btn-light" %>
+    <%= link_to "Edit", edit_adv_path ,:class=> "btn btn-light" %> 
+    <%= link_to "Delete",adv_path(@adv),:method => :delete,:class=> "btn btn-light" %>
     
 
 
 
 
+<%end%>
 <%end%>

@@ -1,23 +1,26 @@
 <%= form_for @adv , url:{action: "update"} do |f| %>
 
-    <%= f.label :numbersofrooms, 'Numbers of Rooms : ' %><br>
-    <%= f.text_field :numbersofrooms %><br><br>
-    <%= f.label :img, 'img : ' %><br>
-    <%= f.text_field :img %><br>
-    <%= f.label :numberofbath, 'Number of Bath : ' %><br>
-    <%= f.text_field :numberofbath %><br>
+    <h6>NUMBERS OF ROOMS</h6>
+    <%= f.text_field :numbersofrooms %>
+     <br><br>
+    <h6>Image</h6>
+    <%= f.text_field :img %> 
+    <br><br>
+    <h6>NUMBERS OF BATHROOM</h6> 
+    <%= f.text_field :numberofbath %>
+    <br><br>
+    <h6>Area</h6>
+    <%= f.text_field :area %>
+    <br><br>
+    <h6> LAND LOT </h6>
+    <%= f.text_field :space  %>
+    <br><br>
+    <h6>ASKING PRICE  </h6>
+    <%= f.text_field :price  %>
+    <br><br>
 
-    <%= f.label :area, 'Area : ' %><br>
-    <%= f.text_field :area %><br><br>
 
-    <%= f.label :space, 'Space :' %><br>
-    <%= f.text_field :space  %><br><br>
-
-    <%= f.label :price, 'Price :' %><br>
-    <%= f.text_field :price  %><br><br>
-
-
-    <%=link_to f.submit " Save " ,:class=> "btn btn-light%>
+    <%=f.submit " Save " ,:class=> "btn btn-light"%>
     
 
     <% end %>
