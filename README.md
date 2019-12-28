@@ -1,24 +1,38 @@
-# README
+Future House 
+It’s s about all users can show their houses  and request the required amount for sale  without third party in sales process.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My Project Deployment
 
-Things you may want to cover:
+i did more aesthetic  in design to show my website exclusive 
 
-* Ruby version
+Technologies used in the project
+Below is the list of technologies I used in developing this project.
+* Github
+* Git
+* HTML
+* CSS
+* JavaScript
+* JQuery
+* Ryby
+* Rails
 
-* System dependencies
+wireframes 
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+Entity Relationship Diagram (ERD)
 
-* How to run the test suite
+https://www.lucidchart.com/invitations/accept/fc4e55d9-2882-4fa5-91cc-b15864a8ddbf
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+User Stories
+* As a user, I should be able to View all my ads.
+* As a user, I should be able to click on  image  and view all in details.
+* As a user, I should not be able to Sign up as a registered user.
+* As a user, I should be able to Login.
+* As a user, I should be able to Edit Account information.
+* As a user, I should be able to Sign Out.
+* As a user, I should be able to Add new ads.
+* As a user, I should be able to Edit user ads.
+* As a user, I should be able to Delete his ads.
